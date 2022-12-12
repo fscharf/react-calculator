@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-// import Bg from 'assets/images/calculator-bg.svg'
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -27,7 +26,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    background: url('./wallpaper.svg');
     display: flex;
     align-items: center;
     justify-content: center;

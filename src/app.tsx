@@ -1,14 +1,11 @@
-import React, { memo } from 'react'
-import { Calculator } from 'components'
-import { GlobalStyles } from 'theme'
+import { Calculator, PageWrapper } from 'components'
+import { memo } from 'react'
 
 const App = () => {
   return (
-    <React.Fragment>
-      <GlobalStyles />
-
+    <PageWrapper>
       <Calculator />
-    </React.Fragment>
+    </PageWrapper>
   )
 }
 

@@ -1,3 +1,7 @@
 export { default as Button } from './button'
 export { default as Calculator } from './calculator'
 export { default as DeleteIcon } from './icons/delete-icon'
+export { default as EyedropperIcon } from './icons/eyedropper-icon'
+export { default as ColorSwitch } from './color-switch'
+export { default as PageWrapper } from './page-wrapper'
+export { default as Wallpaper } from './wallpaper'

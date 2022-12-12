@@ -55,19 +55,19 @@ export const InputWrapper = styled.div`
   border-radius: 8px;
   height: 200px;
   padding: 16px;
-  color: #f9f9f9;
+  color: ${props => props.theme.light};
   font-size: ${baseFontSize};
-  background: #535353;
+  background: ${props => props.theme['dark-lighter']};
 `
 
 export const Input = styled.input`
   padding-top: 16px;
   text-align: end;
   display: flex;
-  color: #f9f9f9;
+  color: ${props => props.theme.light};
   outline: none;
   border: none;
-  background: #535353;
+  background: ${props => props.theme['dark-lighter']};
   width: 100%;
   font-size: ${baseFontSize};
 `

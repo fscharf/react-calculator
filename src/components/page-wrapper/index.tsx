@@ -10,8 +10,6 @@ type Props = React.PropsWithChildren
 const PageWrapper: FC<Props> = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useStorage<string>('theme', themes[0])
 
-  console.log({ currentTheme })
-
   return (
     <ThemeProvider
       theme={{

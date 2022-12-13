@@ -17,6 +17,11 @@ export const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     padding: 16px;
+    margin: 0 8px;
+  }
+
+  @media (max-width: 350px) {
+    margin-top: 32px;
   }
 `
 

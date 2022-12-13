@@ -23,7 +23,7 @@ const PageWrapper: FC<Props> = ({ children }) => {
       <ColorSwitch
         currentTheme={currentTheme}
         themes={themes}
-        onClick={setCurrentTheme}
+        onSelectTheme={setCurrentTheme}
       />
 
       <Wallpaper />

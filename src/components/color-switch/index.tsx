@@ -5,15 +5,15 @@ import { Input, InputWrapper, SwitchButton, Wrapper } from './styles'
 type Props = {
   themes: string[]
   currentTheme: string
-  onClick: (value: string) => void
+  onSelectTheme: (value: string) => void
 }
 
-const ColorSwitch: FC<Props> = ({ themes, currentTheme, onClick }) => {
+const ColorSwitch: FC<Props> = ({ themes, currentTheme, onSelectTheme }) => {
   const [color, setColor] = useState<string>('')
 
   useEffect(() => {
-    if (color) onClick(color)
-  }, [color, onClick])
+    if (color) onSelectTheme(color)
+  }, [color, onSelectTheme])
 
   return (
     <Wrapper>
@@ -24,7 +24,7 @@ const ColorSwitch: FC<Props> = ({ themes, currentTheme, onClick }) => {
               key={theme}
               active={currentTheme === theme}
               bg={theme}
-              onClick={() => onClick(theme)}
+              onClick={() => onSelectTheme(theme)}
             />
           )
         })}
